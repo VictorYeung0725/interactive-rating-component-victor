@@ -6,12 +6,18 @@
 // 3. when the user click submit btn , display none the main contact, and set the seond part to display block;
 
 const marks = document.querySelectorAll('#mark');
+// const circile = document.querySelectorAll('circle');
 const btn = document.querySelector('#btn');
 const showPannel = document.querySelector('#showPannel');
 const giveMark = document.querySelector('#giveMark');
 
 let markCount = document.querySelector('#mark-count');
 
+let circle = document.querySelectorAll('.circle');
+
+console.log(circle);
+
+// console.log(circile);
 console.log(markCount);
 console.log(marks);
 console.log(showPannel);
@@ -30,7 +36,20 @@ const submitResult = function () {
 
 btn.addEventListener('click', submitResult);
 
-marks.forEach(function (mark) {
+// marks.forEach(function (mark) {
+//   mark.addEventListener('click', () => {
+//     mark.style.backgroundColor = 'hsl(25, 97%, 53%)';
+//     markCount.innerHTML = mark.innerHTML;
+//   });
+// });
+
+// marks.forEach(function (mark) {
+//   mark.addEventListener('click', () => {
+//     mark.style.backgroundColor = 'hsl(25, 97%, 53%)';
+//     markCount.innerHTML = mark.innerHTML;
+//   });
+// });
+circle.forEach(function (mark) {
   mark.addEventListener('click', () => {
     mark.style.backgroundColor = 'hsl(25, 97%, 53%)';
     markCount.innerHTML = mark.innerHTML;
